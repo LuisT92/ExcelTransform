@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="ExcelTransform:jar">
+  <artifact type="jar" build-on-make="true" name="ExcelTransform:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/ExcelTransform_jar</output-path>
     <root id="archive" name="ExcelTransform.jar">
       <element id="module-output" name="ExcelTransform" />
