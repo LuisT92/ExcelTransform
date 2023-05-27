@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.exceltransform.ExcelTransformController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exceltransform.ExcelTransformController">
+   <children>
+      <ButtonBar layoutX="313.0" layoutY="320.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#buttonGenerarArchivos" prefHeight="24.0" prefWidth="194.0" text="Generar Archivos" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="82.0" layoutY="102.0" text="Selecciona Archivo" />
+      <Label layoutX="29.0" layoutY="192.0" text="Selecciona carpeta destino" />
+      <TextField fx:id="PathArchivo" layoutX="234.0" layoutY="98.0" prefHeight="24.0" prefWidth="357.0" />
+      <TextField fx:id="PathCarpeta" layoutX="234.0" layoutY="188.0" prefHeight="24.0" prefWidth="357.0" />
+      <Button layoutX="382.0" layoutY="130.0" mnemonicParsing="false" onAction="#buttonObtenerRutaArchivo" text="Seleccionar" />
+      <Button layoutX="382.0" layoutY="224.0" mnemonicParsing="false" onAction="#buttonSeleccionarCarpetaGuardar" text="Seleccionar" />
+   </children>
+</AnchorPane>

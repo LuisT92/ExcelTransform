@@ -69,6 +69,16 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>hu.blackbelt.bundles.poi</groupId>
+            <artifactId>org.apache.poi</artifactId>
+            <version>4.1.2_2</version>
+        </dependency>
+        <dependency>
+            <groupId>hu.blackbelt.bundles.poi</groupId>
+            <artifactId>org.apache.poi</artifactId>
+            <version>4.1.2_2</version>
+        </dependency>
     </dependencies>
 
     <build>
